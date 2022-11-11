@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'Pretendard';
 }
 
 .App-logo {
@@ -36,3 +37,8 @@
     transform: rotate(360deg);
   }
 }
+
+.content {
+  margin-top: 145px;
+}
+
