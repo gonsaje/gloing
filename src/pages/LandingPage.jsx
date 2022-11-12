@@ -5,21 +5,23 @@ import { Helmet } from "react-helmet";
 import Layout from "../components/Layout";
 import Category from "../components/category/Category";
 import "../styles/pages/_landingpage.scss";
-
+import Ring1 from "./ring1.webp";
+import Coat1 from "./coat1.jpeg";
+import Pants1 from "./pants1.jpeg";
 const dummmyCategories = [
-	{ label: "아우터" },
-	{ label: "상의" },
-	{ label: "하의" },
-	{ label: "원피스" },
-	{ label: "트레이닝복" },
-	{ label: "홈웨어" },
+	{ label: "아우터", image: Coat1 },
+	{ label: "상의", image: Ring1 },
+	{ label: "하의", image: Pants1 },
+	{ label: "원피스", image: Ring1 },
+	{ label: "트레이닝복", image: Pants1 },
+	{ label: "홈웨어", image: Coat1 },
 ];
 
 const LandingPage = () => {
-	const categories = dummmyCategories.map((cat) => {
+	const categories = dummmyCategories.map((cat, i) => {
 		return (
-			<div>
-				<Category label={cat.label} />
+			<div key={i}>
+				<Category label={cat.label} image={cat.image} />
 			</div>
 		);
 	});
