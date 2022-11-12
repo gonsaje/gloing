@@ -1,0 +1,8 @@
+@import "/src/styles/site/breakpoints";
+.content {
+	margin-top: 71px;
+
+	@include desktop-only {
+		margin-top: 139px;
+	}
+}

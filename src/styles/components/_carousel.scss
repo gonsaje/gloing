@@ -1,3 +1,5 @@
+@import "/src/styles/site/breakpoints";
+
 .cmp-carousel--container {
 	// background: rgb(71, 53, 167);
 	// background: linear-gradient(
@@ -5,4 +7,8 @@
 	// 	rgba(71, 53, 167, 1) 50%,
 	// 	rgba(46, 32, 106, 1) 51%
 	// );
+}
+
+.splide__arrow {
+	display: none !important;
 }

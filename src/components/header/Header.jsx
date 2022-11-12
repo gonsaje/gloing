@@ -5,6 +5,8 @@ import { Button, Input, TextField } from "@mui/material";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import SearchIcon from "@mui/icons-material/Search";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { Link } from "react-router-dom";
+import SegmentIcon from "@mui/icons-material/Segment";
 
 const headerLinks = [{}];
 
@@ -24,58 +26,45 @@ const Header = () => {
 	return (
 		<header>
 			<div className="cmp-header--container">
-				<div className="cmp-header--primary-nav">
-					<div className="cmp-header--logo-container">
-						<a href="/gloing">
-							<div className="cmp-header--logo"></div>
-						</a>
-					</div>
-					<div style={{ background: "grey" }}>
-						<TextField placeholder="Search" sx={{ border: "none" }} />
-						<Button>
-							<SearchIcon></SearchIcon>
-						</Button>
-					</div>
-					<div className="cmp-header--toolbar">
-						<Button className="cmp-header--search-button">
-							<PersonOutlineIcon></PersonOutlineIcon>
-						</Button>
-					</div>
-				</div>
-				<div className="cmp-header--secondary-nav">
-					<div className="cmp-header--secondary-nav-left-container">
-						<div className="cmp-header--secondary-nav-left">
-							<Button
-								sx={{ fontSize: 24, fontWeight: 600, color: "white" }}
-								variant="text"
-								href="/gloing/brands"
-							>
-								전채 브랜드
+				<div className="cmp-header--primary-container">
+					<div className="cmp-header--primary-nav">
+						<div className="cmp-header--logo-container">
+							<Link to="/">
+								<div className="cmp-header--logo"></div>
+							</Link>
+						</div>
+						<div className="cmp-header--search">
+							<input placeholder="Search" />
+							<Button>
+								<SearchIcon></SearchIcon>
 							</Button>
 						</div>
-						<div className="cmp-header--secondary-nav-left-shape"></div>
-					</div>
-
-					<div className="right">
-						<ThemeProvider theme={secondaryButtonTheme}>
-							<div>
-								<Button variant="text">최저가</Button>
-							</div>
-							<div>
-								<Button variant="text">인기 100</Button>
-							</div>
-							<div>
-								<Button variant="text">공구모집</Button>
-							</div>
-							<div>
-								<Button variant="text">About Us</Button>
-							</div>
-							<div>
-								<Button href="/gloing/kakao-open-chat" variant="text">
-									Open Chat
+						<div className="cmp-header--toolbar">
+							<Button className="cmp-header--search-button">
+								<PersonOutlineIcon></PersonOutlineIcon>
+							</Button>
+							<div className="cmp-header--mobile-menu">
+								<Button>
+									<SegmentIcon></SegmentIcon>
 								</Button>
 							</div>
-						</ThemeProvider>
+						</div>
+					</div>
+				</div>
+				<div className="cmp-header--secondary-container">
+					<div className="cmp-header--secondary-nav">
+						<div>
+							<Link to="/brands">전채 브랜드</Link>
+						</div>
+						<div>최저가</div>
+						<div>인기 100</div>
+						<div>공구모집</div>
+						<div>
+							<Link to="/about-us">About Us</Link>
+						</div>
+						<div>
+							<Link to="/kakao-open-chat">Open Chat</Link>
+						</div>
 					</div>
 				</div>
 			</div>

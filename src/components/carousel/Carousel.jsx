@@ -16,11 +16,6 @@ const Carousel = () => {
 						<img src={BannerImage} alt="Image 1" />
 					</a>
 				</SplideSlide>
-				<SplideSlide>
-					<a href="/kakao-open-chat" target="_blank">
-						<img src={BannerImage2} alt="Image 1" />
-					</a>
-				</SplideSlide>
 			</Splide>
 		</div>
 	);

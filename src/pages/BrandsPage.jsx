@@ -1,10 +1,9 @@
 import { Helmet } from "react-helmet";
+import Layout from "../components/Layout";
 const BrandsPage = () => {
 	return (
 		<>
-			<Helmet>
-				<title>gloing | Brand</title>
-			</Helmet>
+			<Layout pageName="Brands">Brands</Layout>
 		</>
 	);
 };

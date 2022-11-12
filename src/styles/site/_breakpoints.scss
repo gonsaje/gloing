@@ -3,44 +3,48 @@
 
 // the values for these breakpoints are in the variables.scss file
 
+$small-breakpoint: 768px;
+$medium-breakpoint: 1200px;
+$large-breakpoint: 1920px;
+
 // Small ONLY screens (0 - 768px)
 @mixin mobile-only {
-    @media only screen and (max-width: $small-breakpoint) {
-      @content;
-    }
-  }
-  
-  // Small and Medium screens ONLY (0 - 1200px)
-  @mixin tablet-down {
-    @media only screen and (max-width: $medium-breakpoint) {
-      @content;
-    }
-  }
-  
-  // Medium ONLY screens (769px - 1200px)
-  @mixin tablet-only {
-    @media only screen and (min-width: #{$small-breakpoint + 1px}) and (max-width: $medium-breakpoint) {
-      @content;
-    }
-  }
-  
-  // Medium screens (769px +)
-  @mixin tablet-up {
-    @media only screen and (min-width: #{$small-breakpoint + 1px}) {
-      @content;
-    }
-  }
-  
-  // Large ONLY screens (1201px +)
-  @mixin desktop-only {
-    @media only screen and (min-width: #{$medium-breakpoint + 1px}) {
-      @content;
-    }
-  }
-  
-  // Extra large ONLY screens (1921px +)
-  @mixin large-desktop-only {
-    @media only screen and (min-width: $large-breakpoint) {
-      @content;
-    }
-  }
+	@media only screen and (max-width: $small-breakpoint) {
+		@content;
+	}
+}
+
+// Small and Medium screens ONLY (0 - 1200px)
+@mixin tablet-down {
+	@media only screen and (max-width: $medium-breakpoint) {
+		@content;
+	}
+}
+
+// Medium ONLY screens (769px - 1200px)
+@mixin tablet-only {
+	@media only screen and (min-width: #{$small-breakpoint + 1px}) and (max-width: $medium-breakpoint) {
+		@content;
+	}
+}
+
+// Medium screens (769px +)
+@mixin tablet-up {
+	@media only screen and (min-width: #{$small-breakpoint + 1px}) {
+		@content;
+	}
+}
+
+// Large ONLY screens (1201px +)
+@mixin desktop-only {
+	@media only screen and (min-width: #{$medium-breakpoint + 1px}) {
+		@content;
+	}
+}
+
+// Extra large ONLY screens (1921px +)
+@mixin large-desktop-only {
+	@media only screen and (min-width: $large-breakpoint) {
+		@content;
+	}
+}
