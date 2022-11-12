@@ -3,7 +3,7 @@ const BrandsPage = () => {
 	return (
 		<>
 			<Helmet>
-				<title>gloing | Brands</title>
+				<title>gloing | Brand</title>
 			</Helmet>
 		</>
 	);
