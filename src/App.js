@@ -13,9 +13,12 @@ function App() {
 			<div className="content">
 				<BrowserRouter>
 					<Routes>
-						<Route index element={<LandingPage />} />
-						<Route path="kakao-open-chat" element={<KakaoOpenChatPage />} />
-						<Route path="brands" element={<BrandsPage />} />
+						<Route path="/gloing" element={<LandingPage />} />
+						<Route
+							path="/gloing/kakao-open-chat"
+							element={<KakaoOpenChatPage />}
+						/>
+						<Route path="/gloing/brands" element={<BrandsPage />} />
 						<Route path="*" status={404} />
 					</Routes>
 				</BrowserRouter>

@@ -26,7 +26,7 @@ const Header = () => {
 			<div className="cmp-header--container">
 				<div className="cmp-header--primary-nav">
 					<div className="cmp-header--logo-container">
-						<a href="/">
+						<a href="/gloing">
 							<div className="cmp-header--logo"></div>
 						</a>
 					</div>
@@ -48,7 +48,7 @@ const Header = () => {
 							<Button
 								sx={{ fontSize: 24, fontWeight: 600, color: "white" }}
 								variant="text"
-								href="/brands"
+								href="/gloing/brands"
 							>
 								전채 브랜드
 							</Button>
@@ -71,7 +71,7 @@ const Header = () => {
 								<Button variant="text">About Us</Button>
 							</div>
 							<div>
-								<Button href="/kakao-open-chat" variant="text">
+								<Button href="/gloing/kakao-open-chat" variant="text">
 									Open Chat
 								</Button>
 							</div>
