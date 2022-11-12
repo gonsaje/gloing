@@ -10,11 +10,12 @@ const KakaoOpenChatPage = () => {
 			</Helmet> */}
 			<Layout pageName="KakaoTalk OpenChat">
 				<div className="cmp-kakao--container">
-					<iframe
-						className="cmp-kakao--openchat"
-						src="https://open.kakao.com/o/gFTpYjxe"
-						frameborder="0"
-					></iframe>
+					<div className="cmp-kakao--openchat">
+						<iframe
+							src="https://open.kakao.com/o/gFTpYjxe"
+							frameborder="0"
+						></iframe>
+					</div>
 				</div>
 			</Layout>
 		</>

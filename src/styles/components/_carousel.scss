@@ -3,3 +3,12 @@
 .splide__arrow {
 	display: none !important;
 }
+
+.splide__slide {
+	img {
+		max-width: 100%;
+		@include tablet-down {
+			object-fit: scale-down;
+		}
+	}
+}

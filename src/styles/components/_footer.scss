@@ -1,11 +1,4 @@
 @import "/src/styles/site/breakpoints";
-footer {
-	margin-top: 71px;
-
-	@include desktop-only {
-		margin-top: 139px;
-	}
-}
 
 .cmp-footer--container {
 	background-color: rgb(245, 245, 245);

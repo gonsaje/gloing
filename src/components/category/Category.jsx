@@ -1,13 +1,22 @@
 import "../../styles/components/_category.scss";
 
-const Category = (props) => {
+import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+
+const Category = ({ image, label, path }) => {
+	const [link, setLink] = useState("/");
+	useEffect(() => {
+		setLink(path);
+	}, [path]);
 	return (
 		<>
 			<div className="cmp-category--container">
-				<div className="cmp-category--icon">
-					<img src={props.image} />
-				</div>
-				<div className="cmp-category--label">{props.label}</div>
+				<Link to={"/item"}>
+					<div className="cmp-category--icon">
+						<img src={image} />
+					</div>
+					<div className="cmp-category--label">{label}</div>
+				</Link>
 			</div>
 		</>
 	);

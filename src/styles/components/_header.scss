@@ -24,8 +24,12 @@
 	background: white;
 	padding: 15px;
 	z-index: 12;
-	width: 65%;
+	width: 80%;
 	margin: auto;
+
+	@include desktop-only {
+		width: 65%;
+	}
 }
 
 .cmp-header--secondary-container {
@@ -100,6 +104,11 @@
 
 .cmp-header--mobile-menu {
 	@include desktop-only {
+		display: none;
+	}
+}
+.cmp-header--login-button {
+	@include tablet-down {
 		display: none;
 	}
 }

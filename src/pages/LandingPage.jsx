@@ -9,12 +9,12 @@ import Ring1 from "./ring1.webp";
 import Coat1 from "./coat1.jpeg";
 import Pants1 from "./pants1.jpeg";
 const dummmyCategories = [
-	{ label: "아우터", image: Coat1 },
-	{ label: "상의", image: Ring1 },
-	{ label: "하의", image: Pants1 },
-	{ label: "원피스", image: Ring1 },
-	{ label: "트레이닝복", image: Pants1 },
-	{ label: "홈웨어", image: Coat1 },
+	{ label: "아우터", image: Coat1, path: "/item" },
+	{ label: "상의", image: Ring1, path: "/item" },
+	{ label: "하의", image: Pants1, path: "/item" },
+	{ label: "원피스", image: Ring1, path: "/item" },
+	{ label: "트레이닝복", image: Pants1, path: "/item" },
+	{ label: "홈웨어", image: Coat1, path: "/item" },
 ];
 
 const LandingPage = () => {
