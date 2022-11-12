@@ -3,7 +3,6 @@ import "../../styles/components/_carousel.scss";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 import { Button, Input } from "@mui/material";
-import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import BannerImage from "./bannerphoto.png";
 import BannerImage2 from "./gloing-banner2.png";
 

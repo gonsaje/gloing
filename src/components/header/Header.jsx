@@ -2,11 +2,9 @@ import { React, useEffect, useState, useCallback } from "react";
 import "../../styles/components/_header.scss";
 
 import { Button, Input, TextField } from "@mui/material";
-import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
-import SearchIcon from "@mui/icons-material/Search";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Link } from "react-router-dom";
-import SegmentIcon from "@mui/icons-material/Segment";
+import { Segment, Search, PersonOutline } from "@mui/icons-material";
 
 const headerLinks = [{}];
 
@@ -36,16 +34,16 @@ const Header = () => {
 						<div className="cmp-header--search">
 							<input placeholder="Search" />
 							<Button>
-								<SearchIcon></SearchIcon>
+								<Search></Search>
 							</Button>
 						</div>
 						<div className="cmp-header--toolbar">
 							<Button className="cmp-header--search-button">
-								<PersonOutlineIcon></PersonOutlineIcon>
+								<PersonOutline></PersonOutline>
 							</Button>
 							<div className="cmp-header--mobile-menu">
 								<Button>
-									<SegmentIcon></SegmentIcon>
+									<Segment></Segment>
 								</Button>
 							</div>
 						</div>

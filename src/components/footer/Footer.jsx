@@ -2,7 +2,6 @@ import { React, useEffect, useState, useCallback } from "react";
 import "../../styles/components/_footer.scss";
 
 import { Button, Input } from "@mui/material";
-import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const FooterLinks = [{}];
