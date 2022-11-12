@@ -11,7 +11,7 @@ const Category = ({ image, label, path }) => {
 	return (
 		<>
 			<div className="cmp-category--container">
-				<Link to={"/item"}>
+				<Link to={"/brands"}>
 					<div className="cmp-category--icon">
 						<img src={image} />
 					</div>
