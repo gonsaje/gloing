@@ -1,0 +1,32 @@
+.cmp-landingpage--category-container {
+	margin-bottom: 80px;
+}
+.categories-header {
+	background: linear-gradient(135deg, #b9ffa4, #89e7da);
+	padding: 50px 30px 100px 30px;
+	margin-top: 0px;
+}
+.categories-content {
+	display: flex;
+	flex-direction: row;
+	width: 45%;
+	margin: auto;
+	justify-content: space-around;
+	margin-top: -90px;
+}
+
+.seller-section {
+	width: 60%;
+	margin: auto;
+}
+
+.seller-header {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+
+	h2 {
+		margin-left: 16px;
+		color: red;
+	}
+}

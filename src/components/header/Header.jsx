@@ -4,7 +4,7 @@ import "../../styles/components/_header.scss";
 import { Button, Input, TextField } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Link } from "react-router-dom";
-import { Segment, Search, PersonOutline } from "@mui/icons-material";
+import { DragHandle, Search, PersonOutline } from "@mui/icons-material";
 
 const headerLinks = [{}];
 
@@ -39,11 +39,13 @@ const Header = () => {
 						</div>
 						<div className="cmp-header--toolbar">
 							<Button className="cmp-header--search-button">
-								<PersonOutline></PersonOutline>
+								<Link to="/login">
+									<PersonOutline></PersonOutline>
+								</Link>
 							</Button>
 							<div className="cmp-header--mobile-menu">
 								<Button>
-									<Segment></Segment>
+									<DragHandle></DragHandle>
 								</Button>
 							</div>
 						</div>
