@@ -39,13 +39,24 @@
 .seller-section {
 	width: 60%;
 	margin: auto;
+	@include tablet-down {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
 }
-
+.seller-conatainer {
+	width: 100%;
+}
 .seller-header {
 	display: flex;
 	flex-direction: row;
 	align-items: flex-end;
 	margin-bottom: 24px;
+	@include tablet-down {
+		justify-content: center;
+		text-align: center;
+	}
 
 	h2 {
 		margin-left: 16px;
@@ -64,6 +75,7 @@
 
 	@include tablet-only {
 		flex-wrap: wrap;
-		min-width: 650px;
+
+		min-width: 550px;
 	}
 }

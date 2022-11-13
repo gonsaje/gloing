@@ -9,7 +9,15 @@ const Teaser = () => {
 					<div className="cmp-teaser--top-section">
 						<img src={defaultImage} />
 					</div>
-					<div className="cmp-teaser--bottom-section">LowerHalf</div>
+					<div className="cmp-teaser--bottom-section">
+						<div>
+							<div>60%</div>
+							<div>₩300,000원</div>
+						</div>
+						<div>
+							<del>750,000원</del>
+						</div>
+					</div>
 				</div>
 			</Link>
 		</div>
