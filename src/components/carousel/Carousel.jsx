@@ -5,10 +5,11 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { Button, Input } from "@mui/material";
 import BannerImage from "./bannerphoto.png";
 import BannerImage2 from "./gloing-banner2.png";
+import DesktopBanner from "./kakaobanner-desktop.png";
 import { isMobile, isTablet } from "react-device-detect";
 
 const Carousel = () => {
-	let bannerImg = isMobile ? BannerImage2 : BannerImage;
+	let bannerImg = isMobile ? BannerImage2 : DesktopBanner;
 	if (isTablet) bannerImg = BannerImage;
 	return (
 		<div className="cmp-carousel--container">
