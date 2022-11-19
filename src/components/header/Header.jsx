@@ -1,26 +1,9 @@
-import { React, useEffect, useState, useCallback } from "react";
 import "../../styles/components/_header.scss";
-
-import { Button, Input, TextField } from "@mui/material";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import { Menu, Search, PersonOutline } from "@mui/icons-material";
 
-const headerLinks = [{}];
-
 const Header = () => {
-	const secondaryButtonTheme = createTheme({
-		typography: {
-			// fontFamily: ['Montserrat', 'serif'].join(','), Uncomment if you want all the typography to inherit this font.
-			button: {
-				fontSize: 18,
-				fontWeight: 400,
-				color: "white",
-			},
-		},
-	});
-
-	const getContentHeight = () => {};
 	return (
 		<header>
 			<div className="cmp-header--container">

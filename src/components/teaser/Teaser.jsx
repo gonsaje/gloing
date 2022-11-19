@@ -1,13 +1,13 @@
 import "../../styles/components/_teaser.scss";
-import defaultImage from "./default.webp";
+import defaultImage from "./shirts2.png";
 import { Link } from "react-router-dom";
-const Teaser = () => {
+const Teaser = (props) => {
 	return (
 		<div className="cmp-teaser--container">
 			<Link to="/kakao-open-chat">
 				<div className="cmp-teaser--wrapper">
 					<div className="cmp-teaser--top-section">
-						<img src={defaultImage} />
+						<img src={defaultImage} alt="teaser" />
 					</div>
 					<div className="cmp-teaser--bottom-section">
 						<div>

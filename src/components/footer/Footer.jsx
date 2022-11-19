@@ -1,24 +1,6 @@
-import { React, useEffect, useState, useCallback } from "react";
 import "../../styles/components/_footer.scss";
 
-import { Button, Input } from "@mui/material";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-
-const FooterLinks = [{}];
-
 const Footer = () => {
-	const secondaryButtonTheme = createTheme({
-		typography: {
-			// fontFamily: ['Montserrat', 'serif'].join(','), Uncomment if you want all the typography to inherit this font.
-			button: {
-				fontSize: 18,
-				fontWeight: 400,
-				color: "white",
-			},
-		},
-	});
-
-	const getContentHeight = () => {};
 	return (
 		<footer>
 			<div className="cmp-footer--container">

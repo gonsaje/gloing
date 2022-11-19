@@ -1,7 +1,5 @@
-import { Helmet } from "react-helmet";
 import Layout from "../components/Layout";
 import Teaser from "../components/teaser/Teaser";
-import { Button } from "@mui/material";
 const dummySellers = [{ name: 1 }, { name: 1 }, { name: 1 }, { name: 1 }];
 const BrandsPage = () => {
 	const sellers = dummySellers.map((seller, i) => {
