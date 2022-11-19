@@ -1,4 +1,4 @@
-import "../../styles/components/_header.scss";
+import "../styles/components/_header.scss";
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import { Menu, Search, PersonOutline } from "@mui/icons-material";

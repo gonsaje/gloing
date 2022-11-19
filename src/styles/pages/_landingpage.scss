@@ -55,6 +55,8 @@
 	margin-bottom: 24px;
 	@include tablet-down {
 		justify-content: center;
+		flex-direction: column;
+		align-items: center;
 		text-align: center;
 	}
 
@@ -71,11 +73,12 @@
 	@include mobile-only {
 		flex-direction: column;
 		align-items: center;
+		align-self: center;
 	}
 
 	@include tablet-only {
 		flex-wrap: wrap;
-
-		min-width: 550px;
+		align-self: center;
+		min-width: 650px;
 	}
 }

@@ -46,4 +46,12 @@
 	width: 100%;
 	background: white;
 	padding: 10px;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+}
+.cmp-teaser--desc {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 14px;
 }

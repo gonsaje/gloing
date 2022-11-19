@@ -1,5 +1,5 @@
-import Header from "./header/Header";
-import Footer from "./footer/Footer";
+import Header from "./Header";
+import Footer from "./Footer";
 import { Helmet } from "react-helmet";
 import "../styles/components/_layout.scss";
 const Layout = (props) => {

@@ -1,4 +1,4 @@
-import "../../styles/components/_category.scss";
+import "../styles/components/_category.scss";
 
 import { Link } from "react-router-dom";
 // import { useEffect, useState } from "react";
