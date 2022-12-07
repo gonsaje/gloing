@@ -4,12 +4,14 @@ import LandingPage from "./pages/LandingPage";
 import BrandsPage from "./pages/BrandsPage";
 import ItemPage from "./pages/Item";
 import AboutUs from "./pages/AboutUsPage";
+import ScrollToTop from "./ScrollToTop";
 import "./App.css";
 
 function App() {
 	return (
 		<div className="App">
 			<BrowserRouter>
+				<ScrollToTop />
 				<Routes>
 					<Route index element={<LandingPage />} />
 					<Route path="kakao-open-chat" element={<KakaoOpenChatPage />} />
